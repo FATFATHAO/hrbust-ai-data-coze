@@ -17,11 +17,11 @@
 import ReactMarkdown from 'react-markdown';
 
 import copy from 'copy-to-clipboard';
+import { IconInfoCircle } from '@douyinfe/semi-icons';
 import { I18n } from '@coze-arch/i18n';
 import { Tooltip, UIButton, UITag, UIToast, Space } from '@coze-arch/bot-semi';
 import { CustomError } from '@coze-arch/bot-error';
-import { BindType } from '@coze-arch/bot-api/developer_api';
-import { IconInfoCircle } from '@douyinfe/semi-icons';
+// import { BindType } from '@coze-arch/bot-api/developer_api';
 
 import { type ConnectResultInfo } from '../../typings';
 
@@ -92,14 +92,14 @@ export const PublishResultArea = (props: PublishStatusProp) => {
             {I18n.t('bot_publish_result_copy_bot_link')}
           </UIButton>
         ) : null}
-        {record.bind_type === BindType.ApiBind ? (
-          <UIButton
-            theme="borderless"
-            onClick={() => window.open('/docs/developer_guides')}
-          >
-            {I18n.t('coze_api_instru')}
-          </UIButton>
-        ) : null}
+        {/* {record.bind_type === BindType.ApiBind ? ( */}
+        {/*   <UIButton */}
+        {/*     theme="borderless" */}
+        {/*     onClick={() => window.open('/docs/developer_guides')} */}
+        {/*   > */}
+        {/*     {I18n.t('coze_api_instru')} */}
+        {/*   </UIButton> */}
+        {/* ) : null} */}
       </Space>
     </>
   );

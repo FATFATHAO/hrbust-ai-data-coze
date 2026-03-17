@@ -43,7 +43,7 @@ export const PATInstructionWrap: FC<{
   <div className={styles['message-frame']}>
     <Space spacing={0}>
       <p>{I18n.t('pat_reminder_1')}</p>
-      <LinkDocs onClick={onClick} />
+      {/* <LinkDocs onClick={onClick} /> */}
     </Space>
     <p>{I18n.t('pat_reminder_2')}</p>
     {IS_OVERSEA ? <p>{I18n.t('api_token_reminder_1')}</p> : null}

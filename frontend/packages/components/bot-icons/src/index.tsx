@@ -28,6 +28,7 @@ import { ReactComponent as SvgNotionIcon } from './assets/icons/third-party-icon
 import { ReactComponent as SvgGoogleIcon } from './assets/icons/third-party-icons/google.svg';
 import { ReactComponent as SvgFolderIcon } from './assets/icons/third-party-icons/folder.svg';
 import { ReactComponent as SvgFeishuIcon } from './assets/icons/third-party-icons/feishu.svg';
+import { ReactComponent as SvgIconBotMenuLogo } from './assets/icons/temp-logo.svg';
 import { ReactComponent as SvgStoreMenuWorkflow } from './assets/icons/store-menu-workflow.svg';
 import { ReactComponent as SvgStoreMenuWorkflowSelected } from './assets/icons/store-menu-workflow-selected.svg';
 import { ReactComponent as SvgStoreIcon } from './assets/icons/store-icon.svg';
@@ -322,7 +323,8 @@ import { ReactComponent as SvgIconMenuSocialMedia } from './assets/icons/icon-me
 import { ReactComponent as SvgIconMenuSocialMediaYoutube } from './assets/icons/icon-menu-social-media-youtube.svg';
 import { ReactComponent as SvgIconMenuSocialMediaX } from './assets/icons/icon-menu-social-media-x.svg';
 import { ReactComponent as SvgIconBotMenuPlus } from './assets/icons/icon-menu-plus.svg';
-import { ReactComponent as SvgIconBotMenuLogo } from './assets/icons/icon-menu-logo.svg';
+// 更换侧边栏Logo
+// import { ReactComponent as SvgIconBotMenuLogo } from './assets/icons/icon-menu-logo.svg';
 import { ReactComponent as SvgIconBotMenuLogoText } from './assets/icons/icon-menu-logo-text.svg';
 import { ReactComponent as SvgIconBotMenuLogoTextCN } from './assets/icons/icon-menu-logo-text-cn.svg';
 import { ReactComponent as SvgIconMenuFeedback } from './assets/icons/icon-menu-feedback.svg';

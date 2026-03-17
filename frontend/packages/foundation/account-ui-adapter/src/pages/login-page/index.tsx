@@ -91,7 +91,7 @@ export const LoginPage: FC = () => {
               disabled={submitDisabled || registerLoading}
               onClick={login}
               loading={loginLoading}
-              color="hgltplus"
+              color="aiplus"
             >
               {I18n.t('login_button_text')}
             </Button>
@@ -105,16 +105,16 @@ export const LoginPage: FC = () => {
             >
               {I18n.t('register')}
             </Button>
-            <div className="mt-[12px] flex justify-center">
-              <a
-                data-testid="login.link.terms"
-                href="https://github.com/coze-dev/coze-studio?tab=Apache-2.0-1-ov-file"
-                target="_blank"
-                className="no-underline coz-fg-hglt"
-              >
-                {I18n.t('open_source_terms_linkname')}
-              </a>
-            </div>
+            {/* <div className="mt-[12px] flex justify-center"> */}
+            {/*   <a */}
+            {/*     data-testid="login.link.terms" */}
+            {/*     href="https://github.com/coze-dev/coze-studio?tab=Apache-2.0-1-ov-file" */}
+            {/*     target="_blank" */}
+            {/*     className="no-underline coz-fg-hglt" */}
+            {/*   > */}
+            {/*     {I18n.t('open_source_terms_linkname')} */}
+            {/*   </a> */}
+            {/* </div> */}
           </div>
         </div>
       </SignPanel>

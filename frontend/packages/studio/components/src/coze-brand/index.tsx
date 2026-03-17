@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 
 import classNames from 'classnames';
-import {
-  IconBrandCnWhiteRow,
-  IconBrandCnBlackRow,
-  IconBrandEnBlackRow,
-} from '@coze-arch/bot-icons';
-import { useNavigate } from 'react-router-dom';
+// import {
+//   IconBrandCnWhiteRow,
+//   IconBrandCnBlackRow,
+//   IconBrandEnBlackRow,
+// } from '@coze-arch/bot-icons';
 
 import styles from './index.module.less';
 
@@ -33,39 +33,71 @@ export interface CozeBrandProps {
   style?: React.CSSProperties;
 }
 
-export function CozeBrand({
-  isOversea,
-  isWhite,
-  className,
-  style,
-}: CozeBrandProps) {
+// 原版的判断，包括了白色版黑夜版以及国内外版的判断
+// export function CozeBrand({
+//   isOversea,
+//   isWhite,
+//   className,
+//   style,
+// }: CozeBrandProps) {
+//   const navigate = useNavigate();
+//   const navBack = () => {
+//     navigate('/');
+//   };
+//   if (isOversea) {
+//     return (
+//       <IconBrandEnBlackRow
+//         onClick={navBack}
+//         className={classNames(styles['coze-brand'], className)}
+//         style={style}
+//       />
+//     );
+//   }
+//   if (isWhite) {
+//     return (
+//       <IconBrandCnWhiteRow
+//         onClick={navBack}
+//         className={classNames(styles['coze-brand'], className)}
+//         style={style}
+//       />
+//     );
+//   }
+//   return (
+//     <IconBrandCnBlackRow
+//       onClick={navBack}
+//       className={classNames(styles['coze-brand'], className)}
+//       style={style}
+//     />
+//   );
+// }
+
+import MyLogo from './temp-logo.svg';
+
+export function CozeBrand({ className, style }: CozeBrandProps) {
   const navigate = useNavigate();
   const navBack = () => {
     navigate('/');
   };
-  if (isOversea) {
-    return (
-      <IconBrandEnBlackRow
-        onClick={navBack}
-        className={classNames(styles['coze-brand'], className)}
-        style={style}
-      />
-    );
-  }
-  if (isWhite) {
-    return (
-      <IconBrandCnWhiteRow
-        onClick={navBack}
-        className={classNames(styles['coze-brand'], className)}
-        style={style}
-      />
-    );
-  }
+
   return (
-    <IconBrandCnBlackRow
+    <div
       onClick={navBack}
-      className={classNames(styles['coze-brand'], className)}
+      className={classNames(
+        styles['coze-brand'],
+        className,
+        'flex items-center gap-2 cursor-pointer select-none',
+      )}
       style={style}
-    />
+    >
+      <img
+        src={MyLogo}
+        alt="Brand Icon"
+        style={{ height: '28px' }} // 锁死图标高度
+      />
+
+      <span className="text-lg font-bold text-gray-800 tracking-wide">
+        智能问答平台
+      </span>
+    </div>
   );
 }

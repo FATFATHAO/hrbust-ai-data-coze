@@ -19,9 +19,15 @@ import path from 'path';
 import { defineConfig } from '@coze-arch/rsbuild-config';
 import { GLOBAL_ENVS } from '@coze-arch/bot-env';
 
+// 更改转发请求，生产环境
 const API_PROXY_TARGET = `http://localhost:${
   process.env.WEB_SERVER_PORT || 8888
 }/`;
+
+// 测试环境
+// const API_PROXY_TARGET = `http://100.104.156.92:${
+//   process.env.WEB_SERVER_PORT || 8080
+// }/`;
 
 const mergedConfig = defineConfig({
   server: {
@@ -41,8 +47,9 @@ const mergedConfig = defineConfig({
       },
     ],
   },
+  // 更改网页名称
   html: {
-    title: '扣子 Studio',
+    title: '智能问答后台',
     favicon: './assets/favicon.png',
     template: './index.html',
     crossorigin: 'anonymous',
