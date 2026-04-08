@@ -7407,7 +7407,7 @@
   "error_user_free_quota_exhausted": "您的免费使用次数已用完，请升级以继续使用。",
   "error_volcano_quota_insufficient": "火山方舟智能体调用次数不足，请充值以继续使用。",
   "errorpage_action": "回到{name}",
-  "errorpage_bot_btn": "返回 Coze",
+  "errorpage_bot_btn": "返回 智能问答助手平台",
   "errorpage_bot_title": "无法查看智能体",
   "errorpage_invalid_share_link_subtitle": "请空间管理员重新生成的分享链接",
   "errorpage_invalid_share_link_title": "邀请链接已失效",

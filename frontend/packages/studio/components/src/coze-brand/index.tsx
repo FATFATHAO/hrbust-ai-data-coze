@@ -71,7 +71,7 @@ export interface CozeBrandProps {
 //   );
 // }
 
-import MyLogo from './temp-logo.svg';
+import MyLogo from './Data-Development-Logo.svg';
 
 export function CozeBrand({ className, style }: CozeBrandProps) {
   const navigate = useNavigate();
@@ -96,7 +96,7 @@ export function CozeBrand({ className, style }: CozeBrandProps) {
       />
 
       <span className="text-lg font-bold text-gray-800 tracking-wide">
-        智能问答平台
+        哈尔滨数据发展集团有限公司
       </span>
     </div>
   );

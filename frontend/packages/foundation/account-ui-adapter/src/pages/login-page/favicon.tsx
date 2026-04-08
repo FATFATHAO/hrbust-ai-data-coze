@@ -30,7 +30,7 @@
 //   </div>
 // );
 // 以上是源逻辑图片，我更换成了我自己的svg
-import MyIcon from './temp-logo.svg';
+import MyIcon from './Data-Development-Logo.svg';
 
 export const Favicon = () => (
   <div className="relative flex items-center">

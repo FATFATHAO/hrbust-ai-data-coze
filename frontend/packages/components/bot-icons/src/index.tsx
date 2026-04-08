@@ -28,7 +28,6 @@ import { ReactComponent as SvgNotionIcon } from './assets/icons/third-party-icon
 import { ReactComponent as SvgGoogleIcon } from './assets/icons/third-party-icons/google.svg';
 import { ReactComponent as SvgFolderIcon } from './assets/icons/third-party-icons/folder.svg';
 import { ReactComponent as SvgFeishuIcon } from './assets/icons/third-party-icons/feishu.svg';
-import { ReactComponent as SvgIconBotMenuLogo } from './assets/icons/temp-logo.svg';
 import { ReactComponent as SvgStoreMenuWorkflow } from './assets/icons/store-menu-workflow.svg';
 import { ReactComponent as SvgStoreMenuWorkflowSelected } from './assets/icons/store-menu-workflow-selected.svg';
 import { ReactComponent as SvgStoreIcon } from './assets/icons/store-icon.svg';
@@ -504,6 +503,7 @@ import { ReactComponent as SvgLocalFile } from './assets/icons/file-type/icon-lo
 import { ReactComponent as SvgDocxFile } from './assets/icons/file-type/icon-docx.svg';
 import { ReactComponent as SvgDeleteOutline2File } from './assets/icons/file-type/icon-delete-outline2.svg';
 import { ReactComponent as SvgCustomData } from './assets/icons/file-type/icon-custom-data.svg';
+import { ReactComponent as SvgIconBotMenuLogo } from './assets/icons/Data-Development-Logo.svg';
 import { ReactComponent as SvgCozeCross } from './assets/icons/coze_cross.svg';
 import { ReactComponent as SvtUserGuideIconFill } from './assets/icons/coz_user_guide_fill.svg';
 import { ReactComponent as SvtUserGuideIcon } from './assets/icons/coz_user_guide.svg';
