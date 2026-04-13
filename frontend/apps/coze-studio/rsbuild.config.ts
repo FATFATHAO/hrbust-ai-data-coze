@@ -50,7 +50,8 @@ const mergedConfig = defineConfig({
   // 更改网页名称
   html: {
     title: '智能问答后台',
-    favicon: './assets/favicon.png',
+    favicon:
+      '../../packages/components/bot-icons/src/assets/icons/Data-Development-Logo.png',
     template: './index.html',
     crossorigin: 'anonymous',
   },
